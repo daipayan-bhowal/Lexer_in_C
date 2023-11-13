@@ -209,14 +209,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	string_t str = string_file(tape,&file_length);
 	int i = 0;
 	string_t meta = string("\0");
-  //  printf("entire file length is :%d\n", file_length);
+        //  printf("entire file length is :%d\n", file_length);
     	
     for (i = 0; t != EOF;)
 	{
 		printf("Returned token is:%d\n", t = getTokenByPos(str, &i, meta));
-        printf("pos is:%d\n", i);
-        //printf("meta data is:%s\n", meta);
-      //  printf("file line no  is :%d %d\n", i, file_length);
 		debug_lex(t);	
 	}
 	return 0;
