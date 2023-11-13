@@ -763,7 +763,7 @@ KEYWORD:	 // start with keyword portion
 			}
 			break;
 		case ' ':
-            printf("space encountered!");
+                  // printf("space encountered!");
 		case '\v':
         case '\t':
         {	//pos++;
