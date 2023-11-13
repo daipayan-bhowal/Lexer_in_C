@@ -721,7 +721,7 @@ KEYWORD:	 // start with keyword portion
 	while (('a' <= at(str, pos) && at(str, pos) <= 'z'))
 	{
 		
-        printf("keyword loop %c!\n", at(str, pos));
+        //printf("keyword loop %c!\n", at(str, pos));
         last_pos = pos;
         pos++;
         *k = pos;
@@ -733,7 +733,7 @@ KEYWORD:	 // start with keyword portion
 	else if (last_pos == pos - 1 && (last_pos - start_pos))
 	{
 		bool is_keyword = false;
-        printf("keyword hit! next char is %d\n", at(str, pos));
+        //printf("keyword hit! next char is %d\n", at(str, pos));
         string_t string_id = partOfstring(str, start_pos, last_pos - start_pos);
 		int token = keyword_check(string_id, &is_keyword);
 		switch (at(str, pos))
@@ -900,7 +900,7 @@ IDENTIFIER: // identifier section
                 {
            //       if (count == 0)
            //       {
-                 printf("Identifier loop !\n");
+                // printf("Identifier loop !\n");
                      switch (at(str, pos)) // for first letter cannot be digit
                      {
 
@@ -974,7 +974,7 @@ IDENTIFIER: // identifier section
 					}
 				}
 
-                printf("NOT_FOUND CHAR IS:%d , prev char %c prev prev char %d\n", at(str, pos), at(str, pos-1), at(str, pos-2));
+               // printf("NOT_FOUND CHAR IS:%d , prev char %c prev prev char %d\n", at(str, pos), at(str, pos-1), at(str, pos-2));
 				return NOT_FOUND;
 }
 
