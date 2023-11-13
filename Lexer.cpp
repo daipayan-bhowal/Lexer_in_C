@@ -926,7 +926,7 @@ IDENTIFIER: // identifier section
 				if (((last_pos - start_pos) > 0) && last_pos > 0 && last_pos == (pos - 1))
 				{
 					bool is_keyword = false;
-					printf("indentifier/keyword hit!\n");
+					//printf("indentifier/keyword hit!\n");
 					string_t string_id = partOfstring(str, start_pos, pos - start_pos);
 					int token = keyword_check(string_id, &is_keyword);
 					switch (at(str, pos))
