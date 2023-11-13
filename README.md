@@ -1,2 +1,2 @@
 # Lexer_in_C
-A Lexer for C Programming language, written in Visual Studio
+A Standalone Lexer for C Programming language, written in Visual Studio C++
