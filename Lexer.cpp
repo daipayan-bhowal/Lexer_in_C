@@ -146,8 +146,8 @@ START: // starting point of the code
 			goto START;
 		}
 	}
-	printf("Char before switch is:%d %d %d %d\n", at(str, pos), pos, line_no, is_comment);
-	//cout << at(str,pos) << endl;
+	//printf("Char before switch is:%d %d %d %d\n", at(str, pos), pos, line_no, is_comment);
+	
 	switch (at(str, pos))
 	{
     case '\n':
