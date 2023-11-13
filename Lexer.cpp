@@ -269,7 +269,7 @@ START: // starting point of the code
 	case 'k': case 'l': case 'm': case 'n': case 'o': case 'p': case 'q': case 'r': case 's': case 't':
 	case 'u': case 'v': case 'w': case 'x': case 'y': case 'z':
 	{  
-         printf("Alphabet case !\n");
+         //printf("Alphabet case !\n");
 		goto KEYWORD;
 	break;
 	}
@@ -335,7 +335,7 @@ START: // starting point of the code
 	   COMMENTLOOP:
 		  do
 		  {
-			  printf("is comment!");
+			 // printf("is comment!");
 			 
 			  if (at(str, pos) == '\n')
 			  {
@@ -350,7 +350,7 @@ START: // starting point of the code
 		  if (at(str, pos) == '*')
 		  {
 			  pos++;
-			  printf("comment new line %d\n", at(str, pos));
+			  //printf("comment new line %d\n", at(str, pos));
 			  if (at(str, pos) == '\n')
 			  {
 				  line_no++;
@@ -359,10 +359,10 @@ START: // starting point of the code
 			  }
 			  else if (at(str, pos) == '/')
 			  {
-				  printf("comments ended! %c\n", at(str, pos));
+				  //printf("comments ended! %c\n", at(str, pos));
 				  is_comment = false;
 				  pos++; // Comments have been completed, just ignore the comments(do nothing) and go to beginning of the code
-				  printf("comments ended! %d\n", at(str, pos));
+				  //printf("comments ended! %d\n", at(str, pos));
 				  goto START;
 			  }
 			  else
