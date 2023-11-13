@@ -273,8 +273,8 @@ START: // starting point of the code
 		goto KEYWORD;
 	break;
 	}
-    case '"':
-    {
+        case '"':
+        {
            if (is_enclosed == false)
            {
                     is_enclosed = true;
@@ -299,7 +299,7 @@ START: // starting point of the code
             }
             
 
-    }
+        }
 	case '/':
 	{   pos++;
 	//printf("is comment! %c\n", at(str, pos));
