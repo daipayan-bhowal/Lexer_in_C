@@ -927,7 +927,7 @@ IDENTIFIER: // identifier section
 				{
 					bool is_keyword = false;
 					//printf("indentifier/keyword hit!\n");
-					string_t string_id = partOfstring(str, start_pos, pos - start_pos);
+					string_t string_id = partOfstring(str, start_pos, pos - start_pos- 1);
 					int token = keyword_check(string_id, &is_keyword);
 					switch (at(str, pos))
 					{
