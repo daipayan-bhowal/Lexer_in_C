@@ -59,6 +59,7 @@ void debug_lex(int token)
         break;
     case ']':
         printf("]\n");
+        break;
     case '\'':
         printf("\'\n");
         break;
