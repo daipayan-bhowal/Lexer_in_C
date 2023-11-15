@@ -12,7 +12,36 @@ void debug_lex(int token)
 	switch (token)
 	{
        
-    
+        case '=':
+        printf("=\n");
+        break;
+    case '+':
+        printf("+\n");
+        break;
+    case '-':
+        printf("-\n");
+        break;
+    case '*':
+        printf("*\n");
+        break;
+    case '/':
+        printf("/\n");
+        break;
+    case '%':
+        printf("%\n");
+        break;
+    case '^':
+        printf("^\n");
+        break;
+    case '~':
+        printf("~\n");
+        break;
+    case '&':
+        printf("&\n");
+        break;
+    case '!':
+        printf("!\n");
+        break;
     case '(':
         printf("(\n");
      break;
@@ -25,6 +54,11 @@ void debug_lex(int token)
     case '}':
         printf("}\n");
         break;
+    case '[':
+        printf("[\n");
+        break;
+    case ']':
+        printf("]\n");
     case '\'':
         printf("\'\n");
         break;
